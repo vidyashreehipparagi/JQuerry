@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+    <style>
+        div {
+            background-color: crimson;
+            color: mintcream;
+            height: 200px;
+            width: 200px;
+            margin-top: 30px;
+            margin-left: 30px;
+            padding: 100px 30px 30px 30px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" id="btn1" value="show" />
+    <input type="button" id="btn2" value="hide" />
+    <div>
+        This is smaple text in div tag
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+
+
+            $("#btn2").click(function () {
+                $("div").hide(); // hide it is from jquery
+            });
+
+
+            $("#btn1").click(function () {
+                $("div").show();
+            });
+
+
+        });
+
+    </script>
+
+</body>
+</html>
