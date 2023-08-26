@@ -7,13 +7,18 @@
 </head>
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <button>CSS Method</button>
+    <button>CSS Method</button><br /><br />
     <div style="background-color:aqua">This is div tag</div>
     <script>
         $(document).ready(function () {
             $("button").click(function () {
                 $("div").css("background-color", "Pink");
                 $("div").css("height", "200px");
+                $("div").css("width", "500px");
+                $("div").css("margin-top", "200px");
+                $("div").css("margin-left", "500px");
+
+
                 $("div").css("text-align", "center");
                 $("div").css("font-weight", "800");
 
