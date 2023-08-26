@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Toggle Class</title>
+    <style>
+        .main{
+          
+          color:darkblue;
+          text-align:center;
+          font-family:Arial;
+          height:25px;
+          width:100px;
+      
+
+           
+        }
+    </style>
+</head>
+<body>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("h1,div,p").toggleClass("main");
+            });
+        });
+    </script>
+    <button>Click here for toggle case</button>
+    <h1 class="main">Class</h1>
+    <div class="main">Product</div>
+    <div class="main">Id:201</div>
+    <div class="main">Name:Mobile</div>
+    <p class="main">Price:20000</p>
+
+
+</body>
+</html>

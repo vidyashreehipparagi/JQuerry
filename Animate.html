@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Animate</title>
+    <style>
+        div {
+            background-color: crimson;
+            color: mintcream;
+            height: 200px;
+            width: 600px;
+            margin-top: 30px;
+            margin-left: 30px;
+            padding: 100px 30px 30px 30px;
+        }
+    </style>
+</head>
+<body>
+    <button>Start Animation</button>
+
+    <!--<input type="button" id="btn1" value="show" />-->
+    <div>
+        This is smaple text in div tag
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var div = $("div");
+                div.animate({ left: '600px' } );
+                div.animate({ fontSize: '3em' });
+                div.animate({ height: '500px' },2000);
+                div.animate({ width: '800px' },2000);
+                div.animate({ width: '500px' },2000);
+                div.animate({ height: '200px' },2000);
+                div.animate({ fontSize: '1em' },2000);
+                
+
+
+
+
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="button" id="btn1" value="Get" />
+    <div id="d1"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+            integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+            crossorigin="anonymous"></script>
+    <script>
+
+
+        $(document).ready(function () {
+
+
+            $("#btn1").click(function () {
+                $.ajax('https://dummyjson.com/products/1',
+                    {
+                        type: 'GET',
+                        dataType: 'json',
+                        success: function (value) {
+                            var data = "<table border='1'><tr><td>Id</td><td>Title</td><td>Description</td><td>Price</td><td>Image</td></tr>";
+                            data += "<tr><td>" + value.id + "</td><td>" + value.title + "</td><td>" +
+                                value.description + "</td><td>" + value.price +
+                                "</td><td><img src='" + value.thumbnail + "' height='200' width='300'/></td></tr>";
+                            data += "</table>";
+                            $("#d1").html(data);
+                        },
+                        error: function (error) {
+                            $("#d1").text("Server error" + error);
+                        }
+                    }
+
+
+                )
+            })
+
+        });
+    </script>
+
+</body>
+</html>

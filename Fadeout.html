@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FadeOut</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #ef9e9e;
+            height: auto;
+        }
+
+        .d1 {
+            height: 350px;
+            width: 350px;
+            color: greenyellow;
+            background-color: black;
+            margin-top: 30px;
+            margin-left: 280px;
+        }
+
+        .d2 {
+            height: 350px;
+            width: 350px;
+            color: greenyellow;
+            background-color: black;
+            margin-top: 50px;
+            margin-left: 280px;
+        }
+
+        .d3 {
+            height: 350px;
+            width: 350px;
+            color: greenyellow;
+            background-color: black;
+            margin-top: 30px;
+            margin-left: 380px;
+        }
+
+        .d4 {
+            height: 350px;
+            width: 350px;
+            color: greenyellow;
+            background-color: black;
+            margin-top: 50px;
+            margin-left: 380px;
+        }
+
+        .i1 {
+            height: 190px;
+            width: 190px;
+            margin-top: 80px;
+            margin-left: 80px;
+        }
+
+        .i2 {
+            height: 190px;
+            width: 190px;
+            margin-top: 80px;
+            margin-left: 80px;
+        }
+
+        .i3 {
+            height: 190px;
+            width: 190px;
+            margin-top: 80px;
+            margin-left: 80px;
+        }
+
+        .i4 {
+            height: 190px;
+            width: 190px;
+            margin-top: 80px;
+            margin-left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <center><button class="btn1">Click to fade in boxes</button><br><br /></center>
+    <!--<center><button class="btn">Click to fade out boxes</button><br><br /></center>-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 odd">
+                <div class="d1"><img src="j1.jpeg" alt="Alternate Text" class="i1" /></div>
+                <div class="d2"><img src="f2.jpg" alt="Alternate Text" class="i2" /></div>
+            </div>
+            <div class="col-md-6 odd">
+                <div class="d3"><img src="j2.jpeg" alt="Alternate Text" class="i3" /></div>
+                <div class="d4"><img src="j3.png" alt="Alternate Text" class="i4" /></div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $(".i1").fadeIn(1000);
+                $(".i2").fadeIn(2000);
+                $(".i3").fadeIn(3000);
+                $(".i4").fadeIn(4000);
+                $(".d1").fadeIn(8000);
+                             
+                $(".d2").fadeIn(10000);
+                $(".d3").fadeIn(12000);
+                $(".d4").fadeIn(14000);
+
+
+
+
+            });
+        });
+        //$(document).ready(function () {
+        //    $(".btn").click(function () {
+        //        $(".i1").fadeOut(1000);
+        //        $(".i2").fadeOut(2000);
+        //        $(".i3").fadeOut(3000);
+        //        $(".i4").fadeOut(4000);
+        //        $(".d1").fadeOut(8000);
+
+        //        $(".d2").fadeOut(10000);
+        //        $(".d3").fadeOut(12000);
+        //        $(".d4").fadeOut(14000);
+
+
+
+
+        //    });
+        //});
+    </script>
+</body>
+</html>
