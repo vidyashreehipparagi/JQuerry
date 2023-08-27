@@ -1,12 +1,75 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Hover Menu+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hover Menu</title>
+
+    <style>
+        .btn{
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        .menu{
+            position:relative;
+            display:inline-block;
+        }
+        .drop-menu {
+            display: none;
+            position: absolute;
+            background-color:darkgray;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align:center;
+        }
+       .drop-menu a{
+            color:black;
+            display:block;
+            padding:12px 16px;
+            text-decoration:none;
+        }
+        .drop-menu a:hover {
+            color:brown;
+        }
+        .menu:hover .drop-menu{
+            display:block;
+        }
+        .menu:hover .btn{
+            background-color:palevioletred;
+
+        }
+        .subnav{
+            margin-left:50px;
+        }
+        .mainNav{
+            background-color:antiquewhite;
+        }
+
+    </style>
 </head>
 <body>
+    <nav class="mainNav">
+        <a href="#" class="subnav">Home</a>
+        <a href="#" class="subnav">AboutUS</a>
+      
+        <div class="menu subnav">
+            <button class="btn">
+                Menu
+            </button>
+            <div class="drop-menu">
+                <a href="#">Breakfast</a><br />
+                <a href="#">Lunch</a><br />
+                <a href="#">Dinner</a><br />
+            </div>
 
 
+        </div>
+    </nav>
 </body>
 </html>
