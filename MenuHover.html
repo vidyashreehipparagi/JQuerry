@@ -8,12 +8,15 @@
     <title>Hover Menu</title>
 
     <style>
-        .btn{
-            background-color: #04AA6D;
+        body {
+            background-image: url(travell.jpg);
+        }
+        .btn {
             color: white;
             padding: 16px;
             font-size: 16px;
             border: none;
+            background-color: #6ba2ed;
         }
         .menu{
             position:relative;
@@ -22,7 +25,8 @@
         .drop-menu {
             display: none;
             position: absolute;
-            background-color:darkgray;
+            background-color:#9dbeef;
+            color:black;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
@@ -41,14 +45,18 @@
             display:block;
         }
         .menu:hover .btn{
-            background-color:palevioletred;
+            background-color:#9dbeef;
 
         }
         .subnav{
             margin-left:50px;
         }
         .mainNav{
-            background-color:antiquewhite;
+            background-color:#6ba2ed;
+            color:whitesmoke;
+        }
+        a{
+            text-decoration:none;
         }
 
     </style>
@@ -57,15 +65,16 @@
     <nav class="mainNav">
         <a href="#" class="subnav">Home</a>
         <a href="#" class="subnav">AboutUS</a>
+        <a href="#" class="subnav">ContactUs</a>
       
         <div class="menu subnav">
             <button class="btn">
-                Menu
+                Travel By
             </button>
             <div class="drop-menu">
-                <a href="#">Breakfast</a><br />
-                <a href="#">Lunch</a><br />
-                <a href="#">Dinner</a><br />
+                <a href="#">Bus</a><br />
+                <a href="#">Train</a><br />
+                <a href="#">Aeroplane</a><br />
             </div>
 
 
